@@ -89,6 +89,6 @@ class wizardvan (
 
   file { '/etc/sensu/conf.d/config_relay.json':
     content => template($config_relay_template),
-    require => Class['sensu'];
+    require => Class['sensuclassic'];
   }
 }
